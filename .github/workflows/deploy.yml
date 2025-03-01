@@ -29,8 +29,9 @@ jobs:
         run: ${RUNNER_TEMP}/hugo
 
       - name: Deploy
-        if: github.ref == 'refs/heads/gh-pages'
+        if: github.ref == 'refs/heads/main'
         run: |
+          makdir -p public/
           cp -R public/* ${GITHUB_WORKSPACE}/built-site/
           cd ${GITHUB_WORKSPACE}/built-site
           git add .
