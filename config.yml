@@ -1,0 +1,4 @@
+baseURL: "https://sajeelahmed34.github.io/withsajeel/"
+languageCode: 'en-us'
+title: 'My New Hugo Site'
+theme: 'lightbi-hugo'
